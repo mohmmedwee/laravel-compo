@@ -13,14 +13,14 @@ class Compo extends Command
      *
      * @var string
      */
-    protected $signature = 'comp:make';
+    protected $signature = 'comp:service';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Create a new Project Structure';
+    protected $description = 'Create a new Service for spacific controller';
 
     /**
      * Create a new command instance.

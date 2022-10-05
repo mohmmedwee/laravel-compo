@@ -7,14 +7,14 @@ namespace Ostah\LaravelCompo\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
 
-class Dirs extends Command
+class Dto extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'compo:dirs';
+    protected $signature = 'compo:dto {class}';
 
     /**
      * The console command description.
@@ -31,21 +31,8 @@ class Dirs extends Command
      */
     public function handle()
     {
-        $this->info('Creating Directories Based Directory On laravel-compo configuration...');
-        $dirs = config('laravel-compo.dir');
-        foreach ($dirs as $dir) {
-            if (!$this->directoryExists($dir)) {
-                $this->createDir($dir);
-                $this->info('Created'.$dir.' Directories');
-            } else {
-                if ($this->shouldOverwriteConfig()) {
-                    $this->info('Overwriting Directories ');
-                    $this->createDir($force = true);
-                } else {
-                    $this->info('Directories is already exists.');
-                }
-            }
-        }
+        $this->info('Creating DTo...');
+
 
         $this->info('finished');
     }

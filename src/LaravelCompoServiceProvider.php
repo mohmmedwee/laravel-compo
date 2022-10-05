@@ -3,7 +3,7 @@
 namespace Ostah\LaravelCompo;
 
 use Illuminate\Support\ServiceProvider;
-use Ostah\LaravelCompo\Commands\Compo;
+use Ostah\LaravelCompo\Commands\Install;
 
 class LaravelCompoServiceProvider extends ServiceProvider
 {
@@ -42,7 +42,7 @@ class LaravelCompoServiceProvider extends ServiceProvider
 
             // Registering package commands.
              $this->commands([
-                 Compo::class
+                 Install::class
              ]);
         }
     }

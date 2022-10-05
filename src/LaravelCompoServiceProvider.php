@@ -3,6 +3,7 @@
 namespace Ostah\LaravelCompo;
 
 use Illuminate\Support\ServiceProvider;
+use Ostah\LaravelCompo\Commands\Compo;
 
 class LaravelCompoServiceProvider extends ServiceProvider
 {

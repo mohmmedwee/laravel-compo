@@ -16,4 +16,14 @@ return [
         'DTOs'
     ],
 
+    'module' => [
+//        'Models',
+        'Exceptions',
+        'Factories',
+        'Interfaces',
+        'Repositories',
+        'Services',
+//        'Controllers',
+    ]
+
 ];

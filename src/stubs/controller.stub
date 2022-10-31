@@ -1,0 +1,37 @@
+<?php
+
+use Illuminate\Support\Collection;
+
+class {{ class }}
+{
+    /**
+     * Store the entity
+     *
+     * @return bool
+     */
+    public function store() : bool
+    {
+        //
+    }
+
+    /**
+     * Find an entity based on id.
+     *
+     * @return {{ model }}
+     */
+    public function find(int $id) : ?{{ model }}
+    {
+        //
+    }
+
+    /**
+    * Get all the entities
+    *
+    * @return Illuminate\Support\Collection
+    */
+    public function getAll(): ?Collection
+    {
+        return {{ model }}::all();
+    }
+}
+
